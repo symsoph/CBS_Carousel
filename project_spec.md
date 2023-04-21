@@ -60,9 +60,8 @@ User Interaction
 >* User will click on unshaded buttons, that will turn shaded, to choose up to 3 animals to view on the app.
 
 
-wireframing 
--1 opening screen
--1 interesting recyclerview (with buttons)
+Wireframing 
+-
 
 ![Screen Shot 2023-04-19 at 9 33 32 AM](https://user-images.githubusercontent.com/32886451/233708346-d1102ea5-161f-4ed3-92b3-b6182c99d7c4.png)
 
