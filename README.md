@@ -1,5 +1,3 @@
-<!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
-
 # AND101 Milestone 1 - **Cute CBS (Cats, Birds, Shibes)**
 
 Submitted by:
@@ -14,11 +12,10 @@ Time spent: **4** hours spent in total
 
 This document provides an overview, project spec, and wireframes for our team's capstone project: An app that **shows a scrollable list of random dog, cat, bird photos. The user can choose up to 3 of those image categories, and new images can be displayed if the app is refreshed. **
 
-If we had to describe this milestone in three (3) emojis, they would be: **emojis here**
+If we had to describe this milestone in three (3) emojis, they would be: **⏰🗣️☀️**
 
 ## Milestone Requirements
 
-<!-- Please be sure to change the [ ] to [x] for any features you completed.  If a feature is not checked [x], you might miss the points for that item! -->
 
 The following REQUIRED features are completed:
 
