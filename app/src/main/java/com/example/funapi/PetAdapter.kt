@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import android.widget.TextView
 
 
-class PetAdapter (private val petList: List<String>, private val idList: List<String>) : RecyclerView.Adapter<PetAdapter.ViewHolder>() {
+class PetAdapter (private val petList: List<String>) : RecyclerView.Adapter<PetAdapter.ViewHolder>() {
 
 
 
@@ -43,7 +43,7 @@ class PetAdapter (private val petList: List<String>, private val idList: List<St
             .into(holder.petImage)
 
         holder.petImage.setOnClickListener {
-            Toast.makeText(holder.itemView.context, "Doggo at position $photoNum clicked", Toast.LENGTH_SHORT).show()
+            Toast.makeText(holder.itemView.context, "Animal at position $photoNum clicked", Toast.LENGTH_SHORT).show()
         }
     }
 }

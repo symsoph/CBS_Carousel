@@ -20,7 +20,7 @@ import kotlin.random.Random
 class MainActivity : AppCompatActivity() {
 
     private lateinit var petList: MutableList<String>
-     lateinit var idList: MutableList<String>
+    lateinit var idList: MutableList<String>
     private lateinit var rvPets: RecyclerView
     private lateinit var rvPetsID: RecyclerView
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         rvPetsID = findViewById(R.id.imageId_list)
         petList = mutableListOf()
         idList = mutableListOf()
-        getDogImageURL()
+        getAminalImagesURL()
 
         //Log.d("imageURL", " image URL set")
 
@@ -45,42 +45,50 @@ class MainActivity : AppCompatActivity() {
             //random between two apis
 //            var choice = Random.nextInt(2)
 
-            }
         }
+    }
 
-     fun getDogImageURL() {
+    fun getAminalImagesURL() {
         val client = AsyncHttpClient()
-        //var picArray = arrayOf<String>("shibes", "birds", "cats")
-        //var animal = Random.nextInt(2)
-        //var clientURL = "https://shibe.online/api/" + picArray[animal] + "?count=2&urls=true&httpsUrls=true" --> want https://dog.ceo/api/breeds/image/random/20
-        client["https://shibe.online/api/shibes?count=20&urls=false&httpsUrls=true", object : JsonHttpResponseHandler() {
-            override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
-                Log.d("Dog", "response successful$json")
-                val imageArray = json.jsonArray
-                for (i in 0 until 20) {
-                    petList.add("https://cdn.shibe.online/shibes/" + imageArray.getString(i) + ".jpg")
-                    idList.add(imageArray.getString(i))
-               }
-                val adapter = PetAdapter(petList, idList)
-                rvPets.adapter = adapter
-                rvPets.layoutManager = LinearLayoutManager(this@MainActivity)
-                rvPets.addItemDecoration(DividerItemDecoration(this@MainActivity, LinearLayoutManager.VERTICAL))
+        val urls = listOf(
+            "https://shibe.online/api/shibes?count=20&urls=false&httpsUrls=false",
+            "https://shibe.online/api/birds?count=20&urls=false&httpsUrls=false",
+            "https://shibe.online/api/cats?count=20&urls=false&httpsUrls=false"
+        )
+        val types = listOf("shibes", "birds", "cats")
+        for ((index, url) in urls.withIndex()) {
+            val type = types[index]
 
-                //for photo ID
-//                val adapterId = PetAdapter(idList)
-//                rvPetsID.adapterId = adapter
-//                rvPetsID.layoutManager = LinearLayoutManager(this@MainActivity)
-//                rvPetsID.addItemDecoration(DividerItemDecoration(this@MainActivity, LinearLayoutManager.VERTICAL))
-            }
+            client[url, object : JsonHttpResponseHandler() {
+                override fun onSuccess(statusCode: Int, headers: Headers, json: JsonHttpResponseHandler.JSON) {
+                    val imageArray = json.jsonArray
+                    for (i in 0 until imageArray.length()) {
+                        petList.add("https://cdn.shibe.online/$type/" + imageArray.getString(i) + ".jpg")
+                    }
 
-            override fun onFailure(
-                statusCode: Int,
-                headers: Headers?,
-                errorResponse: String,
-                throwable: Throwable?
-            ) {
-                Log.d("Dog Error", errorResponse)
-            }
-        }]
+                    petList.shuffle()
+                    val adapter = PetAdapter(petList)
+                    rvPets.adapter = adapter
+                    rvPets.layoutManager = LinearLayoutManager(this@MainActivity)
+                    rvPets.addItemDecoration(
+                        DividerItemDecoration(
+                            this@MainActivity,
+                            LinearLayoutManager.VERTICAL
+                        )
+                    )
+
+
+                }
+
+                override fun onFailure(
+                    statusCode: Int,
+                    headers: Headers?,
+                    errorResponse: String,
+                    throwable: Throwable?
+                ) {
+                    Log.d("Dog Error", errorResponse)
+                }
+            }]
+        }
     }
 }
