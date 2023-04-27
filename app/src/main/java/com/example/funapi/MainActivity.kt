@@ -3,15 +3,18 @@ package com.example.funapi
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View.OnScrollChangeListener
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.NonNull
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 import okhttp3.Headers
 import org.w3c.dom.Text
@@ -36,6 +39,13 @@ class MainActivity : AppCompatActivity() {
 
         //Log.d("imageURL", " image URL set")
 
+
+        val float_button = findViewById<FloatingActionButton>(R.id.refresh_float_button)
+
+
+        float_button.setOnClickListener {
+            getAminalImagesURL()
+        }
     }
 
     private fun getNextImage(button: Button, imageView: ImageView) {
