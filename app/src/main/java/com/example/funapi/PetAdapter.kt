@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import android.widget.TextView
+import android.widget.CheckBox
 
 
 class PetAdapter (private val petList: List<String>) : RecyclerView.Adapter<PetAdapter.ViewHolder>() {
@@ -16,6 +16,7 @@ class PetAdapter (private val petList: List<String>) : RecyclerView.Adapter<PetA
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val petImage: ImageView
+
 
         init {
             // Find our RecyclerView item's ImageView for future use

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View.OnScrollChangeListener
+import android.view.WindowManager
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.NonNull
@@ -27,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var rvPets: RecyclerView
     private lateinit var rvPetsID: RecyclerView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,16 +40,27 @@ class MainActivity : AppCompatActivity() {
         idList = mutableListOf()
         getAminalImagesURL()
 
+
         //Log.d("imageURL", " image URL set")
 
 
         val float_button = findViewById<FloatingActionButton>(R.id.refresh_float_button)
+        val checkbox1 = findViewById<CheckBox>(R.id.box1)
 
+        //boolean fs = getSharedPreferences("settings", MODE_PRIVATE).getBoolean("fullscreen", false);
+        checkbox1.setOnClickListener {
+            //makefullscreen()
+        }
 
         float_button.setOnClickListener {
             getAminalImagesURL()
         }
     }
+
+    fun makefullscreen(imageView: ImageView) {
+        imageView.adjustViewBounds(true)
+    }
+
 
     private fun getNextImage(button: Button, imageView: ImageView) {
         button.setOnClickListener {
@@ -57,6 +71,7 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
 
     fun getAminalImagesURL() {
         val client = AsyncHttpClient()
@@ -101,4 +116,8 @@ class MainActivity : AppCompatActivity() {
             }]
         }
     }
+}
+
+private fun ImageView.adjustViewBounds(b: Boolean) {
+
 }
