@@ -41,9 +41,9 @@
 
 Required Features
 -
-- Able to display any variety of Cats, Birds, Shibes
-- Able to refresh the images to get new ones (swipe up?)
-- User can choose which animals they want to see after opening the app (tick boxes)
+[X] Able to display any variety of Cats, Birds, Shibes
+[X] Able to refresh the images to get new ones (swipe up?)
+[X] User can choose which animals they want to see after opening the app (tick boxes)
 
 
 Optional Features:
