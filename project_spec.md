@@ -85,7 +85,7 @@ We have come a long way, and the process of building an app with a team from ide
 
 For Milestone 2, include **2+ GIFs** of the build process here!
 
-<img src='https://i.imgur.com/UNDOtwH.gif' title='Process GIF 1' width='' alt='Process GIF 1'/>
+<img src='https://i.imgur.com/TQ7yOe4.gif' title='Process GIF 1' width='1000' alt='Process GIF 1' />
 
 ## License
 
