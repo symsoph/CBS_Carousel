@@ -39,7 +39,9 @@ The following EXTRA features are implemented:
 
 Here's a video that demos all of the app's implemented features:
 
-[Video Demo](https://www.youtube.com/watch?v=71PB3-1eqXI)
+![MilestoneFinal](https://user-images.githubusercontent.com/92275246/235288132-22462008-1978-48ff-884a-a7781fc68a5d.gif)
+
+
 
 VIDEO created with **Zoom and ClipChamp**
 
