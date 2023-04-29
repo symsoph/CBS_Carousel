@@ -86,8 +86,8 @@ We have come a long way, and the process of building an app with a team from ide
 
 For Milestone 2, include **2+ GIFs** of the build process here!
 
+![MilestoneFinal](https://user-images.githubusercontent.com/92275246/235288132-22462008-1978-48ff-884a-a7781fc68a5d.gif)
 
-![Alt Text](https://i.imgur.com/scNLziV.gif) 
 
 ![gif process 1 with float button](https://user-images.githubusercontent.com/120623425/235278022-6dc298b7-c5f8-47bb-b541-86985600f432.gif)
  
