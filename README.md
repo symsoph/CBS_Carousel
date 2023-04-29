@@ -46,3 +46,5 @@ VIDEO created with **Zoom and ClipChamp**
 ## Notes
 
 Here's a place for any other notes on this milestone!
+
+Glad we met this milestone in time and that we overcame the challenges that came with it.
