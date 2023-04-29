@@ -1,9 +1,20 @@
-Product Spec
--
-App Name: Cute CBS (Cat, Bird, Shibes)
+# **Cute CBS (Cat, Bird, Shibes)**
 
-App Criteria
--
+## Table of Contents
+
+1. [App Overview](#App-Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+1. [Build Notes](#Build-Notes)
+
+## App Overview
+
+### Description 
+
+**A scrollable list of random dog, cat, bird photos. The user can choose up to 3 of those image categories, and new images can be displayed if the app is refreshed.**
+
+### App Evaluation
+
 **Mobile:**  
 -This is more than a website because  cute images would be displayed without clutter of ads  and such a feature would be free.  
 
@@ -24,15 +35,15 @@ App Criteria
 -Even though this might not be the most polished app, I think it would still be interesting to build.
 -This product's purpose is to display random images of dogs, cats, or birds in a vertical list that is scrollable.  Other features would only help to enhance the app.
 
+## Product Spec
+
+### 1. User Features (Required and Optional)
+
 Required Features
 -
 - Able to display any variety of Cats, Birds, Shibes
 - Able to refresh the images to get new ones (swipe up?)
 - User can choose which animals they want to see after opening the app (tick boxes)
-
-
-
-
 
 
 Optional Features:
@@ -65,6 +76,32 @@ Wireframing
 
 ![Screen Shot 2023-04-19 at 9 33 32 AM](https://user-images.githubusercontent.com/32886451/233708346-d1102ea5-161f-4ed3-92b3-b6182c99d7c4.png)
 
+## Build Notes
+
+Here's a place for any other notes on the app, it's creation 
+process, or what you learned this unit!  
+
+We have come a long way, and the process of building an app with a team from idea to end product was challenging but very informative.
+
+For Milestone 2, include **2+ GIFs** of the build process here!
+
+<img src='https://i.imgur.com/UNDOtwH.gif' title='Process GIF 1' width='' alt='Process GIF 1'/>
+
+## License
+
+Copyright **yyyy** **your name**
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 
 
