@@ -33,26 +33,17 @@
         android:layout_margin="16dp"
         android:clickable="true"
         android:src="@drawable/baseline_autorenew_black_24dp"
-        app:fabSize="normal"
-    app:layout_anchor="@id/pet_list"
-    app:layout_anchorGravity="bottom|right|end"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.954"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.976"
-    tools:ignore="ExtraText,SpeakableTextPresentCheck"
-        android:focusable="true" />
+ />
 
-    <CheckBox
-        android:id="@+id/box1"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBackButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="Select"
-        android:shadowColor="@color/purple_700"
-        tools:ignore="HardcodedText" />
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_revert"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="16dp"
+        />
 
 
 
