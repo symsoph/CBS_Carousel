@@ -1,24 +1,14 @@
-<!-- (This is a comment) INSTRUCTIONS: Go through this page and fill out any **bolded** entries with their correct values.-->
+# **Cute CBS**
+For Codepath's Android 101 Course
 
-# AND101 Milestone 2 - **Cute CBS**
-
-Submitted by:
+Contributed by:
 - **Sofia Nguyen**
 - **Donna Prince**
 - **Eliott Schaffer**
 
-Time spent: **7** hours spent in total
-
 ## Summary
 
-This document provides a summary of our project building process for our app, **Cute CBS**
-
-## Milestone Requirements
-
-The following REQUIRED features are completed:
-
-- [X] Assign features to each member of your group
-- [X] Establish a goal time for completing each feature
+This document provides a summary of our project building process for our final Android project, an app called **Cute CBS**. The app takes in user input and makes API calls, displaying images of shibes, cats, and or birds alike in random fashion.  The user can also refresh to view new photos or go back and change their choices.  
 
 The following REQUIRED files are included:
 
@@ -28,25 +18,37 @@ The following REQUIRED files are included:
   - [X] Checked off 2+ completed features
   - [X] 2+ GIFs of build progress
 
-- [X] Our 🎥 Demo Video
-  - [X] We have also added the Demo Video Link to the Group Info Form on the course portal.
-
-The following EXTRA features are implemented:
-
-- [ ] List anything else that you added to improve your submission!
-
 ## 🎥 Demo Video
 
-Here's a video that demos all of the app's implemented features:
+Prior implemented features:
 
 ![MilestoneFinal](https://user-images.githubusercontent.com/92275246/235288132-22462008-1978-48ff-884a-a7781fc68a5d.gif)
 
+**NEW** Features:
+  - Starter Screen
+     - 3 checkboxes for 3 image choices
+  - Main Screen
+     - Vertical List of image choices
+     - Refresh Button
+     - Back Button
+
+![Demo](https://github.com/symsoph/CBS_Carousel/blob/main/cbs%20carousel%20app%20demo.gif)
 
 
-VIDEO created with **Zoom and ClipChamp**
+VIDEO created with **ScreenToGif**
 
-## Notes
+## License
 
-Here's a place for any other notes on this milestone!
+Copyright **2023** **Sofia Nguyen**
 
-Glad we met this milestone in time and that we overcame the challenges that came with it.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
